@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sirrine Programming — Meta Quest VR Games & Spatial Experiences</title>
+  <meta name="description" content="Official portfolio and catalog of VR games, mixed reality experiences, and spatial AI tools built natively for Meta Quest by Sirrine Programming.">
+  <meta property="og:title" content="Sirrine Programming — Meta Quest VR Games & Spatial Tools">
+  <meta property="og:description" content="Soar through alpine massifs, engage in planetary 6DOF dogfights, or orchestrate autonomous AI agents in spatial VR.">
+  <meta property="og:image" content="assets/images/icosa-skies-cover.png">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b0f17">
+  <link rel="icon" type="image/png" href="assets/images/icosa-skies-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Ambient background glow -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="#" class="brand-logo">
+        <span class="logo-gem">SP</span>
+        <span class="logo-text">Sirrine <strong>Programming</strong></span>
+      </a>
+      <nav class="main-nav" id="main-nav">
+        <a href="#games">Games & Experiences</a>
+        <a href="#pillars">Studio Pillars</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/Sirrine-Programming" target="_blank" rel="noopener noreferrer" class="nav-icon-link" title="GitHub Organization">
+          <svg class="nav-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+      </nav>
+      <a href="https://www.meta.com/experiences/skybound-quest/1120517883894304" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary nav-cta">
+        <svg class="meta-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"/></svg>
+        <span>Meta Horizon Store</span>
+      </a>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-content">
+      <div class="badge-pill">
+        <span class="pulse-dot"></span>
+        <span>Independent Spatial & VR Engineering</span>
+      </div>
+      <h1 class="hero-title">
+        Visceral flight. Spatial intelligence.<br>
+        <span class="gradient-text">Built natively for Meta Quest.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Sirrine Programming designs authentic first-principles physics simulators, low-poly 6DOF planetary dogfighters, and next-generation voice-driven spatial computing environments.
+      </p>
+      <div class="hero-actions">
+        <a href="#games" class="btn btn-lg btn-primary">
+          <span>Explore VR Titles</span>
+          <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+        </a>
+        <a href="https://github.com/Sirrine-Programming" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-glass">
+          <svg class="btn-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>View on GitHub</span>
+        </a>
+      </div>
+
+      <!-- Quick Platform Chips -->
+      <div class="platform-chips">
+        <span class="chip-label">Target Hardware:</span>
+        <span class="chip">Meta Quest 3</span>
+        <span class="chip">Meta Quest 3S</span>
+        <span class="chip">Meta Quest Pro</span>
+        <span class="chip">Meta Quest 2</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter & Catalog Section -->
+  <section class="catalog-section" id="games">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="section-tag">Portfolio & Store Catalog</span>
+          <h2 class="section-title">Games & Spatial Experiences</h2>
+        </div>
+        <!-- Category Filters -->
+        <div class="filter-bar" id="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Titles</button>
+          <button class="filter-btn" data-filter="simulation">Flight & Sim</button>
+          <button class="filter-btn" data-filter="action">Action & Dogfight</button>
+          <button class="filter-btn" data-filter="spatial">Spatial AI & Tools</button>
+          <button class="filter-btn" data-filter="mr">Mixed Reality</button>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- Project 1: Skybound Quest -->
+        <article class="project-card featured" data-category="simulation">
+          <div class="card-media">
+            <img src="assets/images/skybound-cover.png" alt="Skybound Quest alpine soaring" loading="lazy">
+            <div class="card-media-overlay"></div>
+            <div class="status-badge status-live">Alpha Access Available</div>
+            <div class="platform-badge">Quest 3 | 3S | Pro | 2</div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="meta-tag">Flight Simulator</span>
+              <span class="meta-tag">Unity 6 URP</span>
+              <span class="meta-tag comfort-comfortable">Comfort: Moderate</span>
+            </div>
+            <h3 class="card-title">Skybound Quest 🪂</h3>
+            <p class="card-tagline">Authentic, First-Principles Alpine Paragliding Simulator</p>
+            <p class="card-description">
+              Experience true foot-launched soaring across expansive procedural Swiss alpine massifs. Features realistic coupled pendulum kinematics, convective thermal columns, dynamic orographic ridge lift, companion AI pilots, and competition waypoint racing.
+            </p>
+            <div class="card-highlights">
+              <div class="highlight-item">
+                <span class="hl-dot"></span>
+                <span>Dual brake-line trigger toggle controls + lean-to-weight-shift physics</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-dot"></span>
+                <span>Active thermal lifts and orographic airflow modeled in real-time</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a href="https://www.meta.com/experiences/skybound-quest/1120517883894304" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <svg class="meta-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                <span>View on Meta Horizon Store</span>
+              </a>
+              <a href="https://www.oculus.com/experiences/1120517883894304/release-channels/1299463058973578/?token=SrSUU0b8" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <span>Request Alpha Access</span>
+              </a>
+              <a href="https://github.com/Sirrine-Programming/skybound-quest" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="View Source on GitHub">
+                <svg class="btn-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Icosa Skies / Nova -->
+        <article class="project-card featured" data-category="action">
+          <div class="card-media">
+            <img src="assets/images/icosa-skies-cover.png" alt="Icosa Skies planetary dogfight" loading="lazy">
+            <div class="card-media-overlay"></div>
+            <div class="status-badge status-upcoming">Store Listing Ready</div>
+            <div class="platform-badge">Quest 3 | 3S | Pro | 2</div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="meta-tag">6DOF Space Combat</span>
+              <span class="meta-tag">Vulkan Multiview</span>
+              <span class="meta-tag comfort-intense">Comfort: Intense</span>
+            </div>
+            <h3 class="card-title">Icosa Skies (Nova) 🚀</h3>
+            <p class="card-tagline">Low-Poly Planetary 6DOF Arcade Dogfighter</p>
+            <p class="card-description">
+              Pilot your starfighter across three vibrant low-poly worlds—Vespera, Helios, and Nyx—with seamless space-to-atmosphere transitions. Unholster dual 6DOF Hand Cannons, weave through crystal canyons, and defend planetary systems solo or with co-op wingmen.
+            </p>
+            <div class="card-highlights">
+              <div class="highlight-item">
+                <span class="hl-dot"></span>
+                <span>Seamless zero-load-screen space-to-atmosphere planetary flight transitions</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-dot"></span>
+                <span>Dual-mode weapons: forward cannons + independent 6DOF motion-tracked hand cannons</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a href="https://www.meta.com/experiences/icosa-skies/1122518520360907" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <svg class="meta-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                <span>View on Meta Horizon Store</span>
+              </a>
+              <a href="https://github.com/Sirrine-Programming/nova" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="View Source on GitHub">
+                <svg class="btn-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Skoven -->
+        <article class="project-card" data-category="spatial">
+          <div class="card-media card-media-gradient gradient-skoven">
+            <div class="spatial-icon-container">
+              <svg class="spatial-hero-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15a3 3 0 01-3-3V4.5a3 3 0 116 0v7.5a3 3 0 01-3 3z"/></svg>
+            </div>
+            <div class="status-badge status-prototype">Active Prototype</div>
+            <div class="platform-badge">Meta Quest 3 | 3S</div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="meta-tag">Spatial AI Workspace</span>
+              <span class="meta-tag">Voice-First Orchestration</span>
+              <span class="meta-tag comfort-comfortable">Comfort: Comfortable</span>
+            </div>
+            <h3 class="card-title">Skoven 🌲</h3>
+            <p class="card-tagline">Voice-Driven AI Agent Spatial Workspace for Meta Quest</p>
+            <p class="card-description">
+              Speak. Direct. See it happen. Put on the headset, describe what you want built, and watch an ambient spatial workspace come alive around you. Orchestrate autonomous AI pipelines, review live code diffs, stream terminal outputs, and approve critical steps—all by voice without a physical keyboard.
+            </p>
+            <div class="card-actions">
+              <a href="https://www.meta.com/experiences/skoven" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <svg class="meta-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                <span>Meta Horizon Page</span>
+              </a>
+              <a href="https://github.com/Sirrine-Programming/skoven" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <span>View Repository</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Cielos -->
+        <article class="project-card" data-category="action">
+          <div class="card-media">
+            <img src="assets/images/cielos-icon.png" alt="Cielos Spacecraft Combat" loading="lazy" style="object-fit: cover;">
+            <div class="card-media-overlay"></div>
+            <div class="status-badge status-live">Live WebXR / Quest</div>
+            <div class="platform-badge">Quest Browser & Native</div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="meta-tag">Multiplayer Battle</span>
+              <span class="meta-tag">WebXR & Spatial</span>
+              <span class="meta-tag comfort-moderate">Comfort: Moderate</span>
+            </div>
+            <h3 class="card-title">Cielos ☁️</h3>
+            <p class="card-tagline">High-Altitude Spacecraft Battle & Soaring</p>
+            <p class="card-description">
+              Engage in high-altitude dogfights and soaring above endless procedural cloudscapes. Features real-time multiplayer dogfighting, sinusoidal plasma orbs, aiming rings, and cross-platform play optimized for instant VR launch on Meta Quest.
+            </p>
+            <div class="card-actions">
+              <a href="https://www.meta.com/experiences/cielos" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <svg class="meta-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                <span>Meta Horizon Page</span>
+              </a>
+              <a href="https://cielosvr.space" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <span>Play Live (WebXR)</span>
+              </a>
+              <a href="https://github.com/Sirrine-Programming/Cielos" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="View Source on GitHub">
+                <svg class="btn-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: Dead Zone: Wave Breaker -->
+        <article class="project-card" data-category="mr">
+          <div class="card-media card-media-gradient gradient-deadzone">
+            <div class="spatial-icon-container">
+              <svg class="spatial-hero-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/></svg>
+            </div>
+            <div class="status-badge status-upcoming">In Development</div>
+            <div class="platform-badge">Meta Quest 3 | 3S (MR)</div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="meta-tag">Mixed Reality MRUK</span>
+              <span class="meta-tag">Passthrough Horde Defense</span>
+              <span class="meta-tag comfort-moderate">Comfort: Moderate</span>
+            </div>
+            <h3 class="card-title">Dead Zone: Wave Breaker 🧟</h3>
+            <p class="card-tagline">Room-Scale Mixed-Reality Horde Survival</p>
+            <p class="card-description">
+              Your living room is the arena. The walls crack, windows shatter, and floorboards splinter as waves of zombies pour directly through the geometry of your actual room. Uses Quest 3 high-resolution color passthrough and Scene Mesh for tactical room-scale defense.
+            </p>
+            <div class="card-actions">
+              <a href="https://www.meta.com/experiences/dead-zone" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <svg class="meta-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                <span>Meta Horizon Page</span>
+              </a>
+              <span class="badge-subtle">Targeting Quest 3 & 3S</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: Archivist -->
+        <article class="project-card" data-category="spatial">
+          <div class="card-media card-media-gradient gradient-archivist">
+            <div class="spatial-icon-container">
+              <svg class="spatial-hero-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/></svg>
+            </div>
+            <div class="status-badge status-upcoming">Pre-Production</div>
+            <div class="platform-badge">Meta Quest 3 | Passthrough</div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="meta-tag">Voice World-Builder</span>
+              <span class="meta-tag">Generative MR</span>
+              <span class="meta-tag comfort-comfortable">Comfort: Comfortable</span>
+            </div>
+            <h3 class="card-title">Archivist ✨</h3>
+            <p class="card-tagline">Speak Your World Into Existence</p>
+            <p class="card-description">
+              A voice-driven AI world builder for Meta Quest. Converse with the world engine in natural language—<em>"Add a stone bridge over the river"</em>, <em>"Make it late autumn"</em>—and watch procedural environments form dynamically around you in VR and mixed reality.
+            </p>
+            <div class="card-actions">
+              <a href="https://www.meta.com/experiences/archivist" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <svg class="meta-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                <span>Meta Horizon Page</span>
+              </a>
+              <span class="badge-subtle">Pre-Production Concept</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Studio Pillars Section -->
+  <section class="pillars-section" id="pillars">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Engineering Standard</span>
+        <h2 class="section-title">The Sirrine Programming Pillars</h2>
+        <p class="section-subtitle">Every title is engineered against strict comfort, hardware performance, and intuitive spatial interaction standards.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>First-Principles Physics & Immersion</h3>
+          <p>
+            We eschew canned animations in favor of physical simulation—coupled pendulums in paragliders, atmospheric drag models, and inertial 6DOF thrusters that players feel in their hands.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Rock-Solid Frame Timing & Comfort</h3>
+          <p>
+            Designed from day one for 72/90/120 Hz lockstep on Meta Quest 3 and 3S hardware. GPU-instanced draw calls, single-pass stereo multiview, and comfort reference frames reduce nausea and fatigue.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Voice & Natural Spatial Interaction</h3>
+          <p>
+            Spatial computing is greatest when unburdened by flat menus. We pioneer conversational agent pipelines, unholstered motion tracking, and physical room passthrough interactions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Studio Info -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-card">
+        <div class="about-content">
+          <span class="section-tag">Independent Studio</span>
+          <h2>Crafted for Meta Horizon</h2>
+          <p>
+            <strong>Sirrine Programming</strong> is an independent VR and spatial computing studio led by Jonathan Sirrine. We specialize in cutting-edge simulation, responsive 6DOF arcade gameplay, and conversational AI spatial computing environments engineered specifically for Meta Quest headsets.
+          </p>
+          <div class="about-actions">
+            <a href="mailto:sirrineprogramming@gmail.com" class="btn btn-primary">
+              <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Contact Studio</span>
+            </a>
+            <a href="https://github.com/Sirrine-Programming" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg class="btn-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub Organization</span>
+            </a>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Active VR & MR Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Native Quest Hardware Optimization</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">120 Hz</span>
+            <span class="stat-label">High-Refresh Display Target</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">Zero</span>
+            <span class="stat-label">Nausea-Inducing Hacks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a href="#" class="brand-logo">
+          <span class="logo-gem">SP</span>
+          <span class="logo-text">Sirrine <strong>Programming</strong></span>
+        </a>
+        <p class="footer-copy">© 2026 Sirrine Programming. Built for the Meta Horizon Store and Spatial Computing.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Sirrine-Programming" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.meta.com/experiences/skybound-quest/1120517883894304" target="_blank" rel="noopener noreferrer">Meta Horizon Store</a>
+        <a href="https://cielosvr.space" target="_blank" rel="noopener noreferrer">Cielos Live WebXR</a>
+        <a href="mailto:sirrineprogramming@gmail.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
